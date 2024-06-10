@@ -1,8 +1,40 @@
 body {
-  background-color: lightblue;
+  background-color: #23232b;
+  color: #eed4d4;
+  font-family: "Fira Sans", 'sans';
+}
+
+header {
+  background-color: #664483;
+  font-size: larger;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+@keyframes rainbow-header {
+  0% {color: #df9d9d;}
+  20% {color: #dfdb9d;}
+  40% {color: #9ddfa0;}
+  60% {color: #9dccdf;}
+  80% {color: #bf9ddf;}
+  100% {color: #df9d9d;}
 }
 
 h1 {
-  color: navy;
-  margin-left: 20px;
+  margin-bottom: 1rem;
+  animation: rainbow-header 30s linear 0s infinite normal none;
+}
+
+.main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-width {
+  max-width: 40rem;
+}
+
+.nf {
+  margin: 0rem 0.1rem;
 }
